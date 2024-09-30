@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="101" width="1246" height="360" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Contêiner 33</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="329" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="regiao" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="estado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="municipio" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="coduf" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="codmun" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="codRegiaoSaude" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="nomeRegiaoSaude" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="data" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="semanaEpi" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="populacaoTCU2019" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="casosAcumulado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="casosNovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="obitosAcumulado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="obitosNovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="Recuperadosnovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="emAcompanhamentoNovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="interior/metropolitana" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="293" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="estado" selected="True" />
+                <SelectField field="municipio" selected="True" />
+                <SelectField field="codmun" selected="True" type="WString" size="16384" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="426" y="257" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="codmun" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="846" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>municipio</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-09-26 09:41:00</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2024-09-26 09:41:00</StartDate>
+                  <EndDate>2024-09-26 09:41:00</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([municipio])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings>
+            <Position x="582" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">""</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="846" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\VANES\OneDrive\Documentos\desafio\Auxiliares\Resultado Banco (estados).csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Resultado Banco (estados).csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="id" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\desafio\Auxiliares\Resultado Banco (estados).csv" type="V_WString" />
+                <Field name="nome_estado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\desafio\Auxiliares\Resultado Banco (estados).csv" type="V_WString" />
+                <Field name="codigo_estado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\desafio\Auxiliares\Resultado Banco (estados).csv" type="V_WString" />
+                <Field name="id_regiao_pais" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\desafio\Auxiliares\Resultado Banco (estados).csv" type="V_WString" />
+                <Field name="uf" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\desafio\Auxiliares\Resultado Banco (estados).csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="978" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="uf" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="estado" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_id" selected="True" rename="id_estado" input="Left_" />
+                    <SelectField field="Left_nome_estado" selected="False" input="Left_" />
+                    <SelectField field="Left_codigo_estado" selected="False" input="Left_" />
+                    <SelectField field="Left_id_regiao_pais" selected="False" input="Left_" />
+                    <SelectField field="Left_uf" selected="False" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1194" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=Banco|||municipios</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="id_estado" Dest="id_estado" />
+                    <Field Source="municipio" Dest="nome_municipio" />
+                    <Field Source="codmun" Dest="codigo_municipio" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=Banco
+Query=municipios</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1086" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="id_estado" selected="True" type="Int16" size="2" />
+                <SelectField field="estado" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Unique" />
+      <Destination ToolID="6" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="35" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output26" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Join" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Tabela Municipios</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="815823b2-bcae-47d4-a01d-c4a7c9caa8bd" />
+      <Telemetry>
+        <PreviousWorkflowId value="35f41325-6efc-4f20-9df3-a1d9483b5b04" />
+        <OriginWorkflowId value="35f41325-6efc-4f20-9df3-a1d9483b5b04" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,28 @@
+id,nome_estado,codigo_estado,id_regiao_pais,uf
+136,"Rio de Janeiro",33,2,RJ
+137,"Espírito Santo",32,2,ES
+138,"São Paulo",35,2,SP
+139,"Minas Gerais",31,2,MG
+140,Ceará,23,6,CE
+141,Pernambuco,26,6,PE
+142,Paraíba,25,6,PB
+143,Piauí,22,6,PI
+144,Alagoas,27,6,AL
+145,Bahia,29,6,BA
+146,Maranhão,21,6,MA
+147,Sergipe,28,6,SE
+148,"Rio Grande do Norte",24,6,RN
+149,Paraná,41,4,PR
+150,"Santa Catarina",42,4,SC
+151,"Rio Grande do Sul",43,4,RS
+152,"Mato Grosso do Sul",50,3,MS
+153,"Mato Grosso",51,3,MT
+154,"Distrito Federal",53,3,DF
+155,Goiás,52,3,GO
+156,Roraima,14,1,RR
+157,Pará,15,1,PA
+158,Acre,12,1,AC
+159,Amapá,16,1,AP
+160,Rondônia,11,1,RO
+161,Amazonas,13,1,AM
+162,Tocantins,17,1,TO

@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="65" width="968" height="360" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Contêiner 33</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="293" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="regiao" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="estado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="municipio" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="coduf" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="codmun" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="codRegiaoSaude" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="nomeRegiaoSaude" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="data" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="semanaEpi" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="populacaoTCU2019" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="casosAcumulado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="casosNovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="obitosAcumulado" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="obitosNovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="Recuperadosnovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="emAcompanhamentoNovos" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+                <Field name="interior/metropolitana" size="254" source="File: C:\Users\VANES\OneDrive\Documentos\HIST_PAINEL_COVIDBR_14set2024\HIST_PAINEL_COVIDBR_2024_Parte2_14set2024.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="regiao" selected="True" />
+                <SelectField field="codmun" selected="False" type="WString" size="16384" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="426" y="221" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="regiao" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="570" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="regiao" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings>
+            <Position x="774" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"regiao"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="918" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=Banco|||regioes_pais</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="regiao" Dest="nome_regiao_pais" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=Banco
+Query=regioes_pais</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Unique" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output26" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Tabela Regiões País</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ee98fcdb-8f8d-4a74-b6a5-22f42c12d839" />
+      <Telemetry>
+        <PreviousWorkflowId value="73208162-d7f2-4781-9676-8b89d056ed80" />
+        <OriginWorkflowId value="73208162-d7f2-4781-9676-8b89d056ed80" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
