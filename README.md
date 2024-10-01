@@ -1,7 +1,7 @@
 # 🌐 Painel Interativo COVID-19 no Brasil
 
 ## 📝 Descrição do Projeto
-Este é um painel interativo 📊 para monitoramento e análise dos dados epidemiológicos do COVID-19 no Brasil. Utilizando um banco de dados MySQL 💾 e visualizações criadas no Qlik Desktop 📈, o projeto oferece insights valiosos sobre a evolução dos casos, óbitos e recuperações no país.
+Este projeto visa criar um painel interativo para monitoramento dos dados epidemiológicos de COVID-19 no Brasil, utilizando uma arquitetura que envolve banco de dados MySQL e visualizações com Qlik Sense. O Alteryx foi utilizado exclusivamente para realizar o input dos dados no banco. A seguir, você encontrará todas as instruções para replicar o ambiente e explorar as informações.
 
 ## 🎯 Objetivos
 - 📍 **Visualizar** a evolução dos casos e óbitos de COVID-19 por município, estado e região.
@@ -9,10 +9,18 @@ Este é um painel interativo 📊 para monitoramento e análise dos dados epidem
 - 💡 **Fornecer** suporte à tomada de decisão com dados atualizados e intuitivos.
 
 ## 🛠️ Tecnologias Utilizadas
-- **Banco de Dados**: MySQL 🗄️  
-- **Ferramenta para Inputar Dados**: AlterXZ 🛠️  
-- **Ferramenta de Visualização**: Qlik Desktop 📊  
+- **MySQL**: Armazenamento e consulta de dados epidemiológicos.
+- **XAMPP**: Servidor local para execução do MySQL, facilitando a configuração do ambiente de desenvolvimento.
+- **Alteryx**: Ferramenta usada para inserir os dados no banco MySQL a partir dos arquivos CSV brutos.
+- **Qlik Sense**: Criação de gráficos, dashboards e relatórios dinâmicos.
 - **Fonte dos Dados**: [Covid Brasil](https://covid.saude.gov.br) 🔗 
+
+## 📂 Estrutura do Projeto
+- ```data/raw```: Contém os arquivos CSV brutos baixados do site Covid Brasil.
+- ```data/processed```: Contém os arquivos de saída de algumas tabelas do banco, gerados pelo fluxo Alteryx, que foram utilizados para pegar os IDs das regiões e municípios, etc. Esses IDs foram essenciais para relacionar as tabelas e garantir a integridade dos dados no banco.
+- ```Dashboard```: Painel .qvf criado no Qlik Sense para visualização dos dados.
+- ```SQL```: Scripts SQL para criação das tabelas e inserção dos dados no banco.
+- ```Extensions Qlik```: Pasta contendo extensões personalizadas de gráficos e objetos visuais usadas no Qlik Sense para aprimorar o painel.
 
 ## 🗂️ Estrutura do Banco de Dados
 O banco de dados foi modelado para suportar as seguintes tabelas:
@@ -31,41 +39,44 @@ O banco de dados foi modelado para suportar as seguintes tabelas:
 Antes de executar o projeto, certifique-se de instalar as seguintes ferramentas:
 
 ### 1. MySQL
-- Banco de dados utilizado para armazenar os dados epidemiológicos.
 - [Baixar MySQL](https://dev.mysql.com/downloads/installer/)
 
-### 2. AlterXZ
-- Ferramenta utilizada para realizar a importação de dados no MySQL.
+### 2. AlterXZ.
 - [Baixar AlterXZ](https://www.alteryx.com/pt-br/designer-trial/free-30-days?)
 
 ### 3. Qlik Desktop
-- Software de visualização utilizado para criar os dashboards.
 - [Baixar Qlik Desktop](https://community.qlik.com/t5/Download-Qlik-Products/tkb-p/Downloads) 
+
+### 4. XAMPP
+- [Baixar XAMPP](https://www.apachefriends.org/pt_br/download.html)
 
 Após baixar e instalar as ferramentas, siga os passos abaixo para configurar o ambiente e executar o projeto.
 
 
-## 🚀 Como Executar o Projeto
+## 🛠️ Configuração do Ambiente
 
-1. **Criação do Banco de Dados**:
-   - Clone este repositório:
+**1. Preparação do Banco de Dados com XAMPP**
+- Inicie o MySQL no painel de controle do XAMPP.
+- Clone este repositório:
+
      ```bash
      git clone https://github.com/vanessa-santana/covid-dados.git
      ```
-   - Crie o banco de dados MySQL com o script e tabelas necessárias `create_database.sql` que está na pasta SQL.
+- Crie o banco de dados MySQL com o script e tabelas necessárias `create_database.sql` que está na pasta SQL.
 
-2. **Importação dos Dados**:
-   - Use a ferramenta **AlterXZ** para carregar os dados brutos do site [Covid Brasil](https://covid.saude.gov.br) para as tabelas no MySQL.
-   - Abra o AlterXZ.
-   - Navegue até a pasta alterxz/ do projeto e abra o arquivo covid_data_import.alrxz.
-   - Altere o caminho dos arquivos CSV de entrada para os que estão na pasta data/raw do projeto:
-        Exemplo: Atualize de C:\Users\SeuUsuario\Documentos\CSV\arquivo.csv para data/raw/arquivo.csv.
-    - Execute o fluxo para carregar os dados no banco de dados MySQL.
-    - Após a execução bem-sucedida, os dados estarão carregados no banco de dados e prontos para serem utilizados no painel.
+**2. Carregamento dos Dados no Banco com Alteryx**
+- Os arquivos CSV com os dados brutos estão localizados na pasta ```data/raw```.
+- Abra o fluxo Alteryx .alrxz na pasta alterxz e altere os caminhos dos arquivos CSV para apontar para a pasta ```data/raw``` local no seu ambiente.
+- Utilize também os arquivos ```data/processed``` no fluxo Alteryx para buscar os IDs das regiões e municípios que foram previamente processados.
+- Execute o fluxo para carregar os dados diretamente no banco MySQL configurado no XAMPP.
 
-3. **Configuração do Painel no Qlik Desktop**:
-   - Abra o **Qlik Desktop** e conecte ao banco de dados MySQL.
-   - Carregue os dados no Qlik.
+Observação: O Alteryx foi utilizado apenas para facilitar a inserção dos dados no banco. Após a configuração inicial, todo o processamento e análise dos dados foram realizados com o MySQL e o Qlik Sense.
+
+**3. Criação do Painel no Qlik Sense**
+- Abra o Qlik Sense Desktop e importe o arquivo ```Dashboard/covid_dashboard.qvf```.
+- Conecte o Qlik Sense ao banco de dados covid19_brasil criado no XAMPP.
+- Verifique a pasta Extensions Qlik para adicionar as extensões personalizadas utilizadas no painel.
+- Atualize os gráficos e tabelas no painel para carregar os dados diretamente do MySQL.
 
 ## 🏆 Principais Métricas
 - **Taxa de Mortalidade**: Calculada com base no número de óbitos e casos confirmados.
